@@ -67,21 +67,6 @@ Run `M-x customize-group RET cursor-comet` for all options. Toggle with
 - Terminal Emacs and every theme/font/scaling combination are not guaranteed.
 - Mode lines, fringes, and other window decorations are intentionally skipped.
 
-## Test
-
-```sh
-emacs -Q --batch -L . -L test \
-  -l test/cursor-comet-test.el \
-  -f ert-run-tests-batch-and-exit
-```
-
-Byte-compile with warnings treated as errors:
-
-```sh
-emacs -Q --batch -L . \
-  --eval '(setq byte-compile-error-on-warn t)' \
-  -f batch-byte-compile cursor-comet.el
-```
 
 ## Contributing
 
